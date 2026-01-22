@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "candle-swift-http-types",
+    name: "swift-http-types",
     products: [
         .library(name: "CandleHTTPTypes", targets: ["CandleHTTPTypes"]),
     ],
