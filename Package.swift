@@ -6,26 +6,13 @@ let package = Package(
     name: "candle-swift-http-types",
     products: [
         .library(name: "CandleHTTPTypes", targets: ["CandleHTTPTypes"]),
-        .library(name: "HTTPTypesFoundation", targets: ["HTTPTypesFoundation"]),
     ],
     targets: [
         .target(name: "CandleHTTPTypes"),
-        .target(
-            name: "HTTPTypesFoundation",
-            dependencies: [
-                "CandleHTTPTypes"
-            ]
-        ),
         .testTarget(
             name: "HTTPTypesTests",
             dependencies: [
                 "CandleHTTPTypes"
-            ]
-        ),
-        .testTarget(
-            name: "HTTPTypesFoundationTests",
-            dependencies: [
-                "HTTPTypesFoundation"
             ]
         ),
     ]
