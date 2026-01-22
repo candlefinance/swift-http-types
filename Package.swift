@@ -5,21 +5,21 @@ import PackageDescription
 let package = Package(
     name: "swift-http-types",
     products: [
-        .library(name: "HTTPTypes", targets: ["HTTPTypes"]),
+        .library(name: "CandleHTTPTypes", targets: ["CandleHTTPTypes"]),
         .library(name: "HTTPTypesFoundation", targets: ["HTTPTypesFoundation"]),
     ],
     targets: [
-        .target(name: "HTTPTypes"),
+        .target(name: "CandleHTTPTypes"),
         .target(
             name: "HTTPTypesFoundation",
             dependencies: [
-                "HTTPTypes"
+                "CandleHTTPTypes"
             ]
         ),
         .testTarget(
             name: "HTTPTypesTests",
             dependencies: [
-                "HTTPTypes"
+                "CandleHTTPTypes"
             ]
         ),
         .testTarget(

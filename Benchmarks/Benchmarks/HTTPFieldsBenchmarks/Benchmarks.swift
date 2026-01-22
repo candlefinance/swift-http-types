@@ -13,7 +13,7 @@
 //===----------------------------------------------------------------------===//
 
 import Benchmark
-import HTTPTypes
+import CandleHTTPTypes
 
 let benchmarks = {
     let defaultMetrics: [BenchmarkMetric] = [

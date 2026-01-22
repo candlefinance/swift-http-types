@@ -13,7 +13,7 @@
 //===----------------------------------------------------------------------===//
 
 import Foundation
-import HTTPTypes
+import CandleHTTPTypes
 
 #if canImport(FoundationNetworking)
 import FoundationNetworking
